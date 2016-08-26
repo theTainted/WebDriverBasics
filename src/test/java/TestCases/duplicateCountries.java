@@ -4,6 +4,7 @@ package TestCases;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
@@ -19,14 +20,17 @@ import java.util.List;
 public class duplicateCountries {
 
     public static void main(String [] args) throws InterruptedException, IOException {
-        String sUrl="https://www-ingenico-test-global.lostboys.nl/fr/contactez-nous/epayments";
-        System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "false");
-        WebDriver driver = new FirefoxDriver();
+
+      //  System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "false");
+        //WebDriver driver = new FirefoxDriver();
+       System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        String sUrl="https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
         driver.navigate().to(sUrl);
         driver.manage().window().maximize();
         Thread.sleep(5000);
         Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
-        if (bValue == true) {
+        if (bValue) {
             driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).click();
         }
         driver.switchTo().frame(0);
@@ -40,7 +44,7 @@ public class duplicateCountries {
 
         //Get the length
         System.out.println(countrySelector.size());
-        File file = new File("C:/countries.txt");;
+        File file = new File("C:/countries.txt");
         FileWriter fw = new FileWriter(file.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);
         file = new File("C:/countries.txt");
