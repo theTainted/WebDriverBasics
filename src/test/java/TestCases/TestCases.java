@@ -15,7 +15,6 @@ public class TestCases {
         WebDriver driver= new FirefoxDriver();
         driver.navigate().to("https://www.google.com/ncr");
     homePage homePage = new homePage(driver);
-        homePage.txtSearch.sendKeys("Selenium");
-        homePage.btnSearch.click();
+       homePage.SearchGoogle("Selenium");
     }
 }

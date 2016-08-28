@@ -20,4 +20,8 @@ public class homePage {
     @FindBy(name="btnG")
     public WebElement btnSearch;
 
+    public  void SearchGoogle(String searchGoogle){
+        txtSearch.sendKeys(searchGoogle);
+        btnSearch.click();
+    }
 }
