@@ -2,9 +2,12 @@ package TestCases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by syam.suryanarayanan on 9/2/2016.
@@ -35,7 +38,13 @@ public class ContactForms {
             driver.findElement(By.name("email")).sendKeys("syam.s@test.com");
             driver.findElement(By.name("phone")).sendKeys("2321421");
             driver.findElement(By.name("company")).sendKeys("testcompany");
+            Select industry = new Select(driver.findElement(By.name("industry")));
+            List<WebElement> industrySelector = industry.getOptions();
 
+
+            for (int j =0;j<industrySelector.size();j++){
+                System.out.println(industrySelector.get(j).getText());
+            }
         }
     }
 
