@@ -1,6 +1,7 @@
 package TestCases;
 
 import PageObjects.HomePage;
+import PageObjects.SeleniumPageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -19,6 +20,11 @@ public class TestCases {
         HomePage homePage = new HomePage(driver);
        homePage.SearchGoogle("Selenium");
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-        homePage.clickSelenium();
+        //clicking the selenium link will return the selenium website
+        SeleniumPageObjects seleniumPageObjects = homePage.clickSelenium();
+        //  SeleniumPageObjects seleniumPageObjects = new SeleniumPageObjects(driver);
+        seleniumPageObjects.ClickDownload();
+        seleniumPageObjects.NavigateHome();
+
     }
 }
