@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by syam.suryanarayanan on 9/2/2016.
  */
-public class ContactForms {
+public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIsLessThan2Million {
 
     public static void main(String[] args) throws InterruptedException, IOException {
 
@@ -20,7 +20,7 @@ public class ContactForms {
         //WebDriver driver = new FirefoxDriver();
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String sUrl = "https://www-ingenico-test-global.lostboys.nl/apac/epayments/contact-us";
+        String sUrl = "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
         driver.navigate().to(sUrl);
         driver.manage().window().maximize();
         Thread.sleep(5000);
@@ -40,10 +40,28 @@ public class ContactForms {
             driver.findElement(By.name("company")).sendKeys("testcompany");
             Select industry = new Select(driver.findElement(By.name("industry")));
             List<WebElement> industrySelector = industry.getOptions();
+            industry.selectByIndex(1);
 
+            System.out.println(industry.getFirstSelectedOption().getText());
+            Select segment = new Select(driver.findElement(By.name("segmentation_Merchants_Financial_Service_Providers")));
+            List<WebElement> segmentSelector = segment.getOptions();
+            for (int allSegments = 0; allSegments < segmentSelector.size(); allSegments++) {
+                segment.selectByIndex(allSegments);
+                Select volumeOfSales = new Select(driver.findElement(By.name("online_sales_volume__c")));
+                List<WebElement> volumeOfSalesSelector = volumeOfSales.getOptions();
+                Thread.sleep(2000);
+           /* for (int j =0;j<volumeOfSalesSelector.size();j++){
+                 System.out.println(volumeOfSalesSelector.get(j).getText());}*/
+                volumeOfSales.selectByIndex(1);
 
-            for (int j =0;j<industrySelector.size();j++){
-                System.out.println(industrySelector.get(j).getText());
+                Select headquarters = new Select(driver.findElement(By.name("hq")));
+                headquarters.selectByIndex(1);
+
+                driver.findElement(By.xpath("//div[@id='mainContainer']//span[@class='label']")).click();
+
+                System.out.println(driver.findElement(By.xpath("//div[@id='mainContainer']//h1")).getText());
+                driver.navigate().to(sUrl);
+
             }
         }
     }
