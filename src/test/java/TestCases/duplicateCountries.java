@@ -25,7 +25,7 @@ public class duplicateCountries {
         //WebDriver driver = new FirefoxDriver();
        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String sUrl="https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
+        String sUrl="https://www-ingenico-test-global.lostboys.nl/apac/epayments/contact-us";
         driver.navigate().to(sUrl);
         driver.manage().window().maximize();
         Thread.sleep(5000);
@@ -44,7 +44,7 @@ public class duplicateCountries {
 
         //Get the length
         System.out.println(countrySelector.size());
-        File file = new File("C:/countries.txt");
+        File file = new File("C:/countries1.txt");
         FileWriter fw = new FileWriter(file.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);
         file = new File("C:/countries.txt");
