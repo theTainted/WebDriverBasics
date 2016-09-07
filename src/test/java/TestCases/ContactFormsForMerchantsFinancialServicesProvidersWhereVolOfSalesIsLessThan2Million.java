@@ -25,9 +25,9 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
         driver.navigate().to(sURL);
         driver.manage().window().maximize();
         Thread.sleep(5000);
-    Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
+   Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
         System.out.println(bValue);
-        if (bValue) {
+      if (bValue) {
             driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).click();
 
         }

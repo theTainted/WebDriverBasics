@@ -25,11 +25,11 @@ public class duplicateCountries {
         //WebDriver driver = new FirefoxDriver();
        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String sUrl="https://www-ingenico-test-global.lostboys.nl/apac/epayments/contact-us";
+        String sUrl="https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
         driver.navigate().to(sUrl);
         driver.manage().window().maximize();
         Thread.sleep(5000);
-        Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
+       Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
         if (bValue) {
             driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).click();
         }
