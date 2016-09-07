@@ -14,6 +14,7 @@ import java.util.List;
  */
 public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIsLessThan2Million {
     static String sURL = "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
+
     public static void main(String[] args) throws InterruptedException, IOException {
 
         //  System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "false");
@@ -24,7 +25,8 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
         driver.navigate().to(sURL);
         driver.manage().window().maximize();
         Thread.sleep(5000);
-        Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
+    Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
+        System.out.println(bValue);
         if (bValue) {
             driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).click();
 
@@ -45,7 +47,7 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
             System.out.println(industry.getFirstSelectedOption().getText());
             Select segment = new Select(driver.findElement(By.name("segmentation_Merchants_Financial_Service_Providers")));
             List<WebElement> segmentSelector = segment.getOptions();
-            for (int allSegments = 0; allSegments < segmentSelector.size(); allSegments++) {
+            for (int allSegments = 1; allSegments < segmentSelector.size(); allSegments++) {
                 segment.selectByIndex(allSegments);
                 Select volumeOfSales = new Select(driver.findElement(By.name("online_sales_volume__c")));
                 List<WebElement> volumeOfSalesSelector = volumeOfSales.getOptions();
