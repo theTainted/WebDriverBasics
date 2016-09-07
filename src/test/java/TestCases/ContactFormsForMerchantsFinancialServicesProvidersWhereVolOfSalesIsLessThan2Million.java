@@ -13,15 +13,15 @@ import java.util.List;
  * Created by syam.suryanarayanan on 9/2/2016.
  */
 public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIsLessThan2Million {
-
+    static String sURL = "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
     public static void main(String[] args) throws InterruptedException, IOException {
 
         //  System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "false");
         //WebDriver driver = new FirefoxDriver();
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String sUrl = "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
-        driver.navigate().to(sUrl);
+
+        driver.navigate().to(sURL);
         driver.manage().window().maximize();
         Thread.sleep(5000);
         Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
@@ -60,7 +60,7 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
                 driver.findElement(By.xpath("//div[@id='mainContainer']//span[@class='label']")).click();
 
                 System.out.println(driver.findElement(By.xpath("//div[@id='mainContainer']//h1")).getText());
-                driver.navigate().to(sUrl);
+                driver.navigate().to(sURL);
 
             }
         }
