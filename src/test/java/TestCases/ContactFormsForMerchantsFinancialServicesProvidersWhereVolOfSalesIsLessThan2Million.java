@@ -13,7 +13,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 9/2/2016.
  */
 public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIsLessThan2Million {
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
+    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato#quero-aprender-a-usar-pagamentos-on-line-moveis";
 
     public static void main(String[] args) throws InterruptedException, IOException {
 
@@ -25,12 +25,12 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
         driver.navigate().to(sURL);
         driver.manage().window().maximize();
         Thread.sleep(5000);
-   Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
+ /*  Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
         System.out.println(bValue);
       if (bValue) {
             driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).click();
 
-        }
+        }*/
         driver.switchTo().frame(0);
         Boolean lastNameVisible= driver.findElement(By.name("lastname")).isDisplayed();
         if (lastNameVisible){
@@ -62,7 +62,7 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
                 driver.findElement(By.xpath("//div[@id='mainContainer']//span[@class='label']")).click();
 
                 System.out.println(driver.findElement(By.xpath("//div[@id='mainContainer']//h1")).getText());
-                driver.navigate().to(sURL);
+                //driver.navigate().to(sURL);
 
             }
         }
