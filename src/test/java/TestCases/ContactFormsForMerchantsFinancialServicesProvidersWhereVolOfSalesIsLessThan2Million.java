@@ -48,7 +48,7 @@ public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIs
             Select segment = new Select(driver.findElement(By.name("segmentation_Merchants_Financial_Service_Providers")));
             List<WebElement> segmentSelector = segment.getOptions();
             for (int allSegments = 1; allSegments < segmentSelector.size(); allSegments++) {
-                segment.selectByIndex(allSegments);
+                segment.selectByIndex(1);
                 Select volumeOfSales = new Select(driver.findElement(By.name("online_sales_volume__c")));
                 List<WebElement> volumeOfSalesSelector = volumeOfSales.getOptions();
                 Thread.sleep(2000);
