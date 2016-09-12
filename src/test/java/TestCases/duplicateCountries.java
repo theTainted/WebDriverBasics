@@ -7,19 +7,24 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by syam.suryanarayanan on 8/26/2016.
  */
 public class duplicateCountries {
 
-    public static void main(String [] args) throws InterruptedException, IOException {
+  //  public static void main(String [] args) throws InterruptedException, IOException {
+    @Test
+    public void testDuplicateCountries() throws IOException{
+
 
       //  System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "false");
         //WebDriver driver = new FirefoxDriver();
@@ -28,11 +33,11 @@ public class duplicateCountries {
         String sUrl="https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
         driver.navigate().to(sUrl);
         driver.manage().window().maximize();
-        Thread.sleep(5000);
-       Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
+       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    /*   Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
         if (bValue) {
             driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).click();
-        }
+        }*/
         driver.switchTo().frame(0);
         driver.findElement(By.name("hq")).click();
 
@@ -44,7 +49,7 @@ public class duplicateCountries {
 
         //Get the length
         System.out.println(countrySelector.size());
-        File file = new File("C:/countries1.txt");
+        File file = new File("C:/countries.txt");
         FileWriter fw = new FileWriter(file.getAbsoluteFile());
         BufferedWriter bw = new BufferedWriter(fw);
         file = new File("C:/countries.txt");

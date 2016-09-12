@@ -3,6 +3,8 @@
     <test name="Simple Test">
         <classes>
             <class name="TestCases.COPYContactFormSegmentPaymentServiceProviders"/>
+            <class name="TestCases.duplicateCountries" />
+
         </classes>
     </test>
 </suite>
