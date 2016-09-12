@@ -37,5 +37,6 @@ public class ContactFormSegmentAcquiringBanks {
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
+        driver.quit();
     }
 }
