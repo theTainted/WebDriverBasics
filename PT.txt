@@ -1,0 +1,9 @@
+Empty_First_Name =Campo 'Nome' \u00e9 necess\u00e1rio.
+Empty_Last_Name=Campo 'Sobrenome' \u00e9 necess\u00e1rio.
+Empty_JobTitle=Campo 'Cargo' \u00e9 necess\u00e1rio.
+Empty_Email=Campo 'E-mail' \u00e9 necess\u00e1rio.
+Empty_Telephone=Campo 'Telefone' \u00e9 necess\u00e1rio.
+Empty_Company=Campo 'Empresa' \u00e9 necess\u00e1rio.
+Empty_Industry=Campo 'Ind\u00fastria' \u00e9 necess\u00e1rio.
+Empty_Volume=Campo 'Volume anual de vendas on-line' \u00e9 necess\u00e1rio.
+Empty_HQ=Campo 'Central de la compa\u00f1\u00eda' \u00e9 necess\u00e1rio.
