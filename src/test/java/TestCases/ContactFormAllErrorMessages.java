@@ -1,9 +1,12 @@
 package TestCases;
 
 import PageObjects.ContactForm;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -21,6 +24,13 @@ public class ContactFormAllErrorMessages {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         ContactForm contactform = new ContactForm(driver);
+        contactform.switchToFrame(0);
+       contactform.txtBoxFirstName.click();
         contactform.clickSubmit();
+        List<WebElement> listOfErrorMessage= driver.findElements(By.xpath("//div[@id='feedbackPanel']//li"));
+        System.out.println(listOfErrorMessage.size());
+        for(WebElement errorMessage:listOfErrorMessage){
+            System.out.println(errorMessage.getText());
+        }
     }
 }
