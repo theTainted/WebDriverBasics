@@ -4,6 +4,7 @@
         <classes>
             <class name="TestCases.COPYContactFormSegmentPaymentServiceProviders"/>
             <class name="TestCases.duplicateCountries" />
+            <class name="TestCases.ContactFormSegmentAcquiringBanks" />
 
         </classes>
     </test>
