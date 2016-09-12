@@ -38,6 +38,7 @@ public class ContactFormAllErrorMessages {
             switch (sURL) {
                 case "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato":
                     property.load(new FileInputStream("C:\\Users\\Syam\\IdeaProjects\\WebDriverBasics\\PT.txt"));
+            }
                     Assert.assertEquals(property.getProperty("Empty_First_Name"), listOfErrorMessage.get(0).getText(), "First Name");
                     Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "Last Name");
 
@@ -47,4 +48,5 @@ public class ContactFormAllErrorMessages {
 
         }
     }
-}
+
+//we need to work out a simple way, like adding arrays and comparing from it,
