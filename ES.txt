@@ -1,0 +1,25 @@
+# contains properties used for validation etc.
+# {0} = label, {1} fieldName, {2} value (if provided) {3} validation rule value (if provided)
+validation.message.required=Campo ''{0}'' es necesario.
+
+validation.message.maxlength=Campo ''{0}'' es mayor que {3} caracteres.
+validation.message.minlength=Campo ''{0}'' debe ser m\u00e1s largo que {3} caracteres.
+validation.message.dateformat=El formato del campo ''{0}'' no es v\u00e1lido, debe ser en este formato: ''{3}''.
+validation.message.regexp=El formato del campo ''{0}'' no es v\u00e1lido, debe ser en este formato: {3}.
+validation.message.exceededmaxsize=El campo ''{0}'' es inv\u00e1lido, ha superado el tama\u00f1o m\u00e1ximo de carga.
+validation.message.wrongfileextension=Selecciona un archivo de tipo {2}.
+validation.message.wrongfileextension.or=o
+validation.message.wrongfileextension.configuration=Campo ''a\u00f1adir un archivo'' est\u00e1 configurado incorrectamente.
+validation.message.luhn=Campo ''{0}'' es inv\u00e1lido
+
+button.submit.label=Enviar
+button.next.label=Siguiente
+button.previous.label=Anterior
+
+validation.rule.number.general.label=N\u00famero
+validation.rule.number.percent.label=Por ciento
+validation.rule.string.alphanumeric.label=Alfanum\u00e9rico
+validation.rule.email.label=Email
+validation.rule.website.label=Direcci\u00f3n web
+
+form.counter.limit.error=Se ha alcanzado el n\u00famero m\u00e1ximo de env\u00edos

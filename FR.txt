@@ -1,0 +1,24 @@
+# contains properties used for validation etc.
+# {0} = label, {1} fieldName, {2} value (if provided) {3} validation rule value (if provided)
+validation.message.required=Le champ ''{0}'' est obligatoire.
+validation.message.maxlength=Le champ ''{0}'' doit comporter {3} caract\u00E8res maximum.
+validation.message.minlength=Le champ ''{0}'' doit comporter {3} caract\u00E8res minimum.
+validation.message.dateformat=Le champ ''{0}'' est invalide format de la date, il doit \u00EAtre au format suivant : ''{3}''.
+validation.message.regexp=Le champ ''{0}'' est invalide, il doit \u00EAtre au format suivant : {3}.
+validation.message.exceededmaxsize=Le champ ''{0}'' est invalide, il d\u00E9passe la taille maximale autoris\u00E9e.
+validation.message.wrongfileextension=Selectionnez un fichier de type {2}.
+validation.message.wrongfileextension.or=ou
+validation.message.luhn=Le champ ''{0}'' est invalide.
+
+button.submit.label=Valider
+button.next.label=Suivant
+button.previous.label=Pr\u00E9c\u00E9dent
+
+validation.rule.number.general.label=Nombre
+validation.rule.number.percent.label=Pourcentage
+validation.rule.string.alphanumeric.label=Alphanum\u00E9rique
+validation.rule.email.label=Adresse E-mail
+validation.rule.website.label=Site Web
+validation.message.wrongfileextension.configuration=Champ Upload est mal configurud.
+
+form.counter.limit.error=Le nombre maximum de formulaires envoy\u00E9s a \u00E9t\u00E9 atteint.

@@ -1,0 +1,24 @@
+# contains properties used for validation etc.
+# {0} = label, {1} fieldName, {2} value (if provided) {3} validation rule value (if provided)
+validation.message.required=Veld ''{0}'' is verplicht.
+validation.message.maxlength=Veld ''{0}'' mag niet langer zijn dan {3} karakters.
+validation.message.minlength=Veld ''{0}'' moet minimaal {3} karakters lang zijn.
+validation.message.dateformat=Veld ''{0}'' is incorrect datum formaat, moet in volgende formaat zijn: ''{3}''.
+validation.message.regexp=Veld ''{0}'' is niet correct, moet in volgende formaat zijn: {3}.
+validation.message.exceededmaxsize=Selecteer een bestand van minder dan {2} MB om te versturen.
+validation.message.wrongfileextension=Selecteer een bestand van het type {2}.
+validation.message.wrongfileextension.or=of
+validation.message.wrongfileextension.configuration=Upload field is niet goed geconfigureerd.
+validation.message.luhn=Veld ''{0}'' heeft niet het correcte formaat.
+
+button.submit.label=Verstuur
+button.next.label=Volgende
+button.previous.label=Vorige
+
+validation.rule.number.general.label=Nummer
+validation.rule.number.percent.label=Percentage
+validation.rule.string.alphanumeric.label=Alfanumeriek
+validation.rule.email.label=E-mailadres
+validation.rule.website.label=Webadres
+
+form.counter.limit.error=Het maximale aantal verzonden formulieren is bereikt

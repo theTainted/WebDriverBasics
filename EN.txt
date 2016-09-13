@@ -1,0 +1,24 @@
+# contains properties used for validation etc.
+# {0} = label, {1} fieldName, {2} value (if provided) {3} validation rule value (if provided)
+validation.message.required=Field ''{0}'' is required.
+validation.message.maxlength=Field ''{0}'' is longer than {3} characters.
+validation.message.minlength=Field ''{0}'' must be longer than {3} characters.
+validation.message.dateformat=Field ''{0}'' is invalid date format, it must be in this format: ''{3}''.
+validation.message.regexp=Field ''{0}'' is invalid, it must be in this format: {3}.
+validation.message.exceededmaxsize=Field ''{0}'' is invalid, the maximum upload size has exceeded.
+validation.message.wrongfileextension=Select a file of type {2}.
+validation.message.wrongfileextension.or=or
+validation.message.wrongfileextension.configuration=Upload field is configured incorrectly.
+validation.message.luhn=Field ''{0}'' is invalid
+
+button.submit.label=Submit
+button.next.label=Next
+button.previous.label=Previous
+
+validation.rule.number.general.label=Number
+validation.rule.number.percent.label=Percent
+validation.rule.string.alphanumeric.label=Alphanumeric
+validation.rule.email.label=E-mail Address
+validation.rule.website.label=Website Address
+
+form.counter.limit.error=The maximum number of submissions has been reached
