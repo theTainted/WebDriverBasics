@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ContactFormAllErrorMessages {
     static Properties property = new Properties();
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+    static String sURL = "https://www-ingenico-test-global.lostboys.nl/apac/epayments/contact-us";
 
     public static void main(String[] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
@@ -33,20 +33,23 @@ public class ContactFormAllErrorMessages {
         contactform.clickSubmit();
         List<WebElement> listOfErrorMessage= driver.findElements(By.xpath("//div[@id='feedbackPanel']//li"));
         System.out.println(listOfErrorMessage.size());
-        for(WebElement errorMessage:listOfErrorMessage){
+     //   for(WebElement errorMessage:listOfErrorMessage){
 
             switch (sURL) {
                 case "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato":
-                    property.load(new FileInputStream("C:\\Users\\Syam\\IdeaProjects\\WebDriverBasics\\PT.txt"));
-            }
+                    property.load(new FileInputStream("..\\WebDriverBasics\\PT.txt"));
                     Assert.assertEquals(property.getProperty("Empty_First_Name"), listOfErrorMessage.get(0).getText(), "First Name");
                     Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "Last Name");
+                default:
+                    System.out.println("nothing to match");
+            }
+
 
             }
 
 
 
         }
-    }
+ //   }
 
 //we need to work out a simple way, like adding arrays and comparing from it,
