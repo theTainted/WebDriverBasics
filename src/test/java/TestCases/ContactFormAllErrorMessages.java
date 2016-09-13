@@ -1,6 +1,7 @@
 package TestCases;
 
 import PageObjects.ContactForm;
+import com.google.common.base.Verify;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,8 +39,11 @@ public class ContactFormAllErrorMessages {
             switch (sURL) {
                 case "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato":
                     property.load(new FileInputStream("..\\WebDriverBasics\\PT.txt"));
-                    Assert.assertEquals(property.getProperty("Empty_First_Name"), listOfErrorMessage.get(0).getText(), "First Name");
-                    Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "Last Name");
+                    Assert.assertEquals(property.getProperty("Empty_First_Name"), listOfErrorMessage.get(0).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_JobTitle"), listOfErrorMessage.get(2).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_Email"), listOfErrorMessage.get(3).getText(), "the expected and actual dont match");
+                    
                 default:
                     System.out.println("nothing to match");
             }
