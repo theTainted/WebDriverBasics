@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -43,7 +44,7 @@ public class ContactFormAllErrorMessages {
                     Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "the expected and actual dont match");
                     Assert.assertEquals(property.getProperty("Empty_JobTitle"), listOfErrorMessage.get(2).getText(), "the expected and actual dont match");
                     Assert.assertEquals(property.getProperty("Empty_Email"), listOfErrorMessage.get(3).getText(), "the expected and actual dont match");
-                    
+
                 default:
                     System.out.println("nothing to match");
             }
