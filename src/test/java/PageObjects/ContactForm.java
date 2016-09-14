@@ -32,6 +32,9 @@ public class ContactForm {
     public WebElement selectSegment;
     @FindBy(name = "segmentation_Merchants_Financial_Service_Providers")
     public WebElement selectSegmentForFinancialServiceProviders;
+    @FindBy(name="segmentation_Merchants_Service_Providers")
+    public WebElement selectMerchantServiceProviderSegement;
+
     @FindBy(name = "online_sales_volume__c")
     public WebElement selectVolumeOfSales;
     @FindBy(name = "hq")
@@ -40,6 +43,13 @@ public class ContactForm {
     public WebElement txtBoxMessage;
     @FindBy(xpath = "//div[@id='mainContainer']//span[@class='label']")
     public WebElement btnSubmit;
+
+
+
+
+
+
+
     WebDriver driver;
 
     public ContactForm(WebDriver driver) {
@@ -103,7 +113,16 @@ public class ContactForm {
         List<WebElement> financialSegmentSelector = financialSegment.getOptions();
         financialSegment.selectByIndex(financialndstryDropDownIndex);
     }
-
+    public void selectSegmentForMerchantsServicesProviders(int forMerchantsServiceProviders){
+        /*The index will start from one,
+          may be later we can try making the function more intelligent ,
+         include looping and avoid passing the index
+          now this is designed for me and for my ease
+           use of Select is also so that if required we can loop when we update this method*/
+        Select merchantServiceProviderSegment = new Select(selectMerchantServiceProviderSegement);
+        List <WebElement> merchantServiceProviderSegementSelector = merchantServiceProviderSegment.getOptions();
+        merchantServiceProviderSegment.selectByIndex(forMerchantsServiceProviders);
+    }
     public void selectSalesVolume(int salesVolumeDropDownIndex) {
          /*The index will start from one,
           may be later we can try making the function more intelligent ,
@@ -142,7 +161,6 @@ public class ContactForm {
 
 
     }
-
 
     public void acceptCookies() {
         Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
