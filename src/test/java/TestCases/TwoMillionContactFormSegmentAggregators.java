@@ -33,7 +33,7 @@ public class TwoMillionContactFormSegmentAggregators {
         contactform.setPhone("1234567");
         contactform.selectIndustry(2);
         contactform.selectSegmentForMerchantsServicesProviders(1);
-        contactform.countrySelector(2);
+        contactform.countrySelector(3);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

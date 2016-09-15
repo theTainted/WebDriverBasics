@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Syam on 10-09-2016.
  */
-public class TwoMillionContactFormSegmentIndependentSalesOrganizations {
+public class TwoMillionContactFormSegmentIndependentTelcoResellers {
    private static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
 
   //  public static void main(String[] args) {
     @Test
-       public void testTwoMillionContactFormSegmentIndependentSalesOrganizations(){
+       public void testTwoMillionContactFormSegmentIndependentTelcoResellers(){
     System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
@@ -32,8 +32,8 @@ public class TwoMillionContactFormSegmentIndependentSalesOrganizations {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry(2);
-        contactform.selectSegmentForMerchantsServicesProviders(2);
-        contactform.countrySelector(2);
+        contactform.selectSegmentForMerchantsServicesProviders(3);
+        contactform.countrySelector(4);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
