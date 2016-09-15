@@ -153,7 +153,9 @@ public class ContactForm {
         try {
             driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
             softAssert.assertNotNull(thankyouPage.getText(),"i dont think you are in the thank you page");
+            System.out.println(thankyouPage.getText());
             softAssert.assertAll();
+
             return elementPresent = true;
         } catch (NoSuchElementException e) {
             return elementPresent = false;
