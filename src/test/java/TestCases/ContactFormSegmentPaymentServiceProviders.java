@@ -3,6 +3,7 @@ package TestCases;
 import PageObjects.ContactForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,8 +12,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class ContactFormSegmentPaymentServiceProviders {
     static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
-
-    public static void main(String[] args) {
+@Test
+    public void testContactFormSegmentPaymentServiceProviders() {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
@@ -34,6 +35,7 @@ public class ContactFormSegmentPaymentServiceProviders {
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
+        driver.quit();
     }
 }
 

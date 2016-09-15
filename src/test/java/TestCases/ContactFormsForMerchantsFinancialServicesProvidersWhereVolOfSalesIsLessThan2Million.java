@@ -13,7 +13,7 @@ import java.util.List;
  * Created by syam.suryanarayanan on 9/2/2016.
  */
 public class ContactFormsForMerchantsFinancialServicesProvidersWhereVolOfSalesIsLessThan2Million {
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato#quero-aprender-a-usar-pagamentos-on-line-moveis";
+    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
 
     public static void main(String[] args) throws InterruptedException, IOException {
 
