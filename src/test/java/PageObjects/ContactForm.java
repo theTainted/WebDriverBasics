@@ -1,5 +1,6 @@
 package PageObjects;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -7,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.asserts.SoftAssert;
 
 import java.sql.Timestamp;
 import java.util.List;
@@ -43,15 +45,11 @@ public class ContactForm {
     public WebElement txtBoxMessage;
     @FindBy(xpath = "//div[@id='mainContainer']//span[@class='label']")
     public WebElement btnSubmit;
-
-
-
-
-
-
+    @FindBy(xpath="//div[@id='mainContainer']//h1")
+    public WebElement thankyouPage;
 
     WebDriver driver;
-
+    SoftAssert softAssert = new SoftAssert();
     public ContactForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -154,6 +152,8 @@ public class ContactForm {
         btnSubmit.click();
         try {
             driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
+            softAssert.assertNotNull(thankyouPage.getText(),"i dont think you are in the thank you page");
+            softAssert.assertAll();
             return elementPresent = true;
         } catch (NoSuchElementException e) {
             return elementPresent = false;
