@@ -3,8 +3,8 @@
     <test name="Simple Test">
         <classes>
 
-            <class name=" TestCases.duplicateCountries" />
-            <class name="TestCases.ContactFormSegmentAcquiringBanks" />
+            <class name="TestCases.duplicateCountries"/>
+            <class name="TestCases.ContactFormSegmentAcquiringBanks"/>
             <class name="TestCases.ContactFormSegmentPaymentServiceProviders"/>
             <class name="TestCases.TwoMillionContactFormSegmentAggregators" />
             <class name="TestCases.TwoMillionContactFormSegmentIndependentSalesOrganizations"/>
