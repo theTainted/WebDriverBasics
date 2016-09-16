@@ -30,7 +30,7 @@ public class duplicateCountries {
         //WebDriver driver = new FirefoxDriver();
        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-        String sUrl="https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+        String sUrl="https://www-ingenico-test-global.lostboys.nl/ca/epayments/contact-us";
         driver.navigate().to(sUrl);
         driver.manage().window().maximize();
        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

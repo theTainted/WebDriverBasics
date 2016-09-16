@@ -11,11 +11,12 @@ import java.util.concurrent.TimeUnit;
  * Created by Syam on 10-09-2016.
  */
 public class TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts {
-   private static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
-
+ // private static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+        String sURL = ContactForm.sURL;
   //  public static void main(String[] args) {
     @Test
        public void testTwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts(){
+
     System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
@@ -24,6 +25,7 @@ public class TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         ContactForm contactform = new ContactForm(driver);
+       // driver.navigate().to(sURL);
         contactform.switchToFrame(0);
         contactform.setFirstName("Syam");
         contactform.setLastName("s");
@@ -37,6 +39,6 @@ public class TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts {
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
-        driver.quit();
+        //driver.quit();
     }
 }

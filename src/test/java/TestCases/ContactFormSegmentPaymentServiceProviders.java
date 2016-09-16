@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * Created by syam.suryanarayanan on 9/12/2016.
  */
 public class ContactFormSegmentPaymentServiceProviders {
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+    String sURL = ContactForm.sURL;
 @Test
     public void testContactFormSegmentPaymentServiceProviders() {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");

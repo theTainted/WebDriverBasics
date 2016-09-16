@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * Created by Syam on 10-09-2016.
  */
 public class TwoMillionContactFormSegmentAggregators {
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+    String sURL = ContactForm.sURL;
 
   //  public static void main(String[] args) {
     @Test
