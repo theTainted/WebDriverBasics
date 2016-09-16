@@ -8,14 +8,15 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Created by syam.suryanarayanan on 9/12/2016.
+ * Created by Syam on 10-09-2016.
  */
-public class COPYContactFormSegmentPaymentServiceProviders {
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+public class TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts {
+   private static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
 
+  //  public static void main(String[] args) {
     @Test
-    public void testContactForm() {
-        System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+       public void testTwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts(){
+    System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.navigate().to(sURL);
@@ -30,13 +31,12 @@ public class COPYContactFormSegmentPaymentServiceProviders {
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
-        contactform.selectIndustry(1);
-        contactform.selectSegementForFinancialIndustry(2);
-        contactform.countrySelector(2);
+        contactform.selectIndustry(3);
+        contactform.selectSegmentForRetail(2);
+        contactform.countrySelector(6);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
         driver.quit();
     }
 }
-

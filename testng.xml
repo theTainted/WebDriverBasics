@@ -1,17 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Example test run" parallel="methods" thread-count="3">
-    <test name="Simple Test">
-        <classes>
+<test name="Simple Test">
+    <classes>
 
-            <class name="TestCases.duplicateCountries"/>
-            <class name="TestCases.ContactFormSegmentAcquiringBanks"/>
-            <class name="TestCases.ContactFormSegmentPaymentServiceProviders"/>
-            <class name="TestCases.TwoMillionContactFormSegmentAggregators" />
-            <class name="TestCases.TwoMillionContactFormSegmentIndependentSalesOrganizations"/>
-            <class name="TestCases.TwoMillionContactFormSegmentIndependentTelcoResellers"/>
-            <class name="TestCases.TwoMillionContactFormSegmentIndependentValueAddedResellers"/>
-            <class name="TestCases.TwoMillionContactFormRetailSegmentB2BCommercialGoods"/>
+        <class name="TestCases.duplicateCountries"/>
+        <class name="TestCases.ContactFormSegmentAcquiringBanks"/>
+        <class name="TestCases.ContactFormSegmentPaymentServiceProviders"/>
+        <class name="TestCases.TwoMillionContactFormSegmentAggregators" />
+        <class name="TestCases.TwoMillionContactFormSegmentIndependentSalesOrganizations"/>
+        <class name="TestCases.TwoMillionContactFormSegmentIndependentTelcoResellers"/>
+        <class name="TestCases.TwoMillionContactFormSegmentIndependentValueAddedResellers"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentB2BCommercialGoods"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts"/>
 
-        </classes>
-    </test>
+    </classes>
+</test>
 </suite>
