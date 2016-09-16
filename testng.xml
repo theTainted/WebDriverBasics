@@ -12,7 +12,7 @@
         <class name="TestCases.TwoMillionContactFormSegmentIndependentValueAddedResellers"/>
         <class name="TestCases.TwoMillionContactFormRetailSegmentB2BCommercialGoods"/>
         <class name="TestCases.TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts"/>
-
+        <class name="TestCases.TwoToFiveMillionContactFormFinancialServiceSegmentAcquiringBanks"/>
     </classes>
 </test>
 </suite>

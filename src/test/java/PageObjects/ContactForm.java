@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -40,6 +41,9 @@ public class ContactForm {
     public WebElement selectSegmentForRetail;
     @FindBy(name = "online_sales_volume__c")
     public WebElement selectVolumeOfSales;
+    @FindBy(xpath="//div[@id='page0']//ul[@class='checkboxes choice']/li")
+   List <WebElement> checkBoxTargetMarket;
+
     @FindBy(name = "hq")
     public WebElement selectHeadQuarters;
     @FindBy(name = "message")
@@ -155,6 +159,16 @@ public class ContactForm {
         List<WebElement> headQuarterelector = countrySelect.getOptions();
         countrySelect.selectByIndex(countryDropDownIndex);
     }
+    public void selectTargetMarket(String sTargetMarket){
+        //If  Europe alone is selected we will create a new one so that it handles the scenario where it lets you choose <5 or  >5 european countries
+              if (checkBoxTargetMarket.size() != 0) {
+                driver.findElement(By.xpath("//div[@id='page0']//input[@value='"+sTargetMarket+"']")).click();
+            }
+        else {
+                  throw new NoSuchElementException("no such element expression");
+              }
+    }
+
 
     public void setMessageInMessageBox(String text) {
         txtBoxMessage.sendKeys(text + " : " + new Timestamp(System.currentTimeMillis()));
