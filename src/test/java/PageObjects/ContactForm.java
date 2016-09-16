@@ -161,11 +161,13 @@ public class ContactForm {
     }
 
     public Boolean clickSubmit() {
+        //The assert equal text should be made customisable, right now its hardcoded to english.
         Boolean elementPresent;
         btnSubmit.click();
         try {
             driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
             softAssert.assertNotNull(thankyouPage.getText(),"i dont think you are in the thank you page");
+            softAssert.assertEquals(thankyouPage.getText(),"Thanks / Success!","they dont match");
             System.out.println(thankyouPage.getText());
             softAssert.assertAll();
 
