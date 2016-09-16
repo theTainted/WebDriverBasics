@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Example test run" parallel="methods" thread-count="6">
+<suite name="Example test run" parallel="methods" thread-count="3">
     <test name="Simple Test">
         <classes>
 
@@ -9,6 +9,8 @@
             <class name="TestCases.TwoMillionContactFormSegmentAggregators" />
             <class name="TestCases.TwoMillionContactFormSegmentIndependentSalesOrganizations"/>
             <class name="TestCases.TwoMillionContactFormSegmentIndependentTelcoResellers"/>
+            <class name="TestCases.TwoMillionContactFormSegmentIndependentValueAddedResellers"/>
+            <class name="TestCases.TwoMillionContactFormRetailSegmentB2BCommercialGoods"/>
 
         </classes>
     </test>
