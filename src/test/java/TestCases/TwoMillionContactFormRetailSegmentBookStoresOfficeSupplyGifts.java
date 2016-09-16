@@ -39,6 +39,6 @@ public class TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts {
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
-        //driver.quit();
+        driver.quit();
     }
 }
