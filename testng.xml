@@ -15,6 +15,10 @@
         <class name="TestCases.TwoToFiveMillionContactFormFinancialServiceSegmentAcquiringBanks"/>
         <class name="TestCases.TwoToFiveMillionContactFormFinancialServiceSegmentPaymentServiceProviders"/>
         <class name="TestCases.TwoToFiveMillionContactFormRetailSegmentB2BCommercialGoods"/>
+        <class name="TestCases.TwoToFiveMillionContactFormMerchantServiceProviderSegmentAggregators"/>
+        <class name="TestCases.TwoToFiveMillionContactFormSegmentMerchantServiceProvidersIndependentSalesOrganizations"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentTelcoResellers"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentValueAddedResellers"/>
     </classes>
 </test>
 </suite>
