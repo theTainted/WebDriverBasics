@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Syam on 10-09-2016.
  */
-public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentValueAddedResellers {
+public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers {
     String sURL = ContactForm.sURL;
 
   //  public static void main(String[] args) {
     @Test
-       public void testwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentValueAddedResellers(){
+       public void testwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers(){
     System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 

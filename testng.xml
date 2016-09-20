@@ -18,7 +18,7 @@
         <class name="TestCases.TwoToFiveMillionContactFormMerchantServiceProviderSegmentAggregators"/>
         <class name="TestCases.TwoToFiveMillionContactFormSegmentMerchantServiceProvidersIndependentSalesOrganizations"/>
         <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentTelcoResellers"/>
-        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentValueAddedResellers"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers"/>
     </classes>
 </test>
 </suite>
