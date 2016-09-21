@@ -25,6 +25,7 @@
         <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
         <class name ="TestCases.TwoToFiveMillionContactFormEuropeanMarketFinancialServiceSegmentAcquiringBanks"/>
         <class name="TestCases.FiftyMillionVendingPrivateSectorEuropeanContactFormMoreThanFiveEuropeanCountries"/>
+        <class name ="TestCases.TwoToFiveMillionContactFormRetailDirectMarketingFieldSales"/>
     </classes>
 </test>
 </suite>
