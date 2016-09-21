@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Syam on 10-09-2016.
  */
-public class TwoMillionContactFormRetailSegmentDepartmentStores {
+public class TwoMillionContactFormRetailSegmentDepartmentStores_forMultibrowser {
  // private static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
         String sURL = ContactForm.sURL;
         WebDriver driver;

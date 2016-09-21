@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run">
+
+    <test name="FirefoxTest">
+
+    <parameter name="browser" value="firefox" />
+
+
+    <classes>
+
+        <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+    </classes>
+    </test>
+
+    <test name="chrometest">
+
+    <parameter name="browser" value="chrome" />
+
+
+    <classes>
+
+
+        <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+    </classes>
+    </test>
+</suite>
