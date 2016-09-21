@@ -39,6 +39,8 @@ public class ContactForm {
     public WebElement selectMerchantServiceProviderSegement;
     @FindBy(name="segmentation_Retail")
     public WebElement selectSegmentForRetail;
+    @FindBy(name="segmentation_Vending")
+    public WebElement selectSegmentForVending;
     @FindBy(name = "online_sales_volume__c")
     public WebElement selectVolumeOfSales;
     @FindBy(xpath="//div[@id='page0']//ul[@class='checkboxes choice']/li")
@@ -144,7 +146,16 @@ public class ContactForm {
         List <WebElement> retailSegmentSelector = retailSegment.getOptions();
         retailSegment.selectByValue(forRetail);
     }
-
+    public void selectSegmentForVending(String forVending){
+        /*The index will start from one,
+          may be later we can try making the function more intelligent ,
+         include looping and avoid passing the index
+          now this is designed for me and for my ease
+           use of Select is also so that if required we can loop when we update this method*/
+        Select vendingSegment = new Select(selectSegmentForRetail);
+        List <WebElement> vendingSegmentSelector = vendingSegment.getOptions();
+        vendingSegment.selectByValue(forVending);
+    }
     public void selectSalesVolume(String salesVolumeDropDown) {
          /*The index will start from one,
           may be later we can try making the function more intelligent ,
