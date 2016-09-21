@@ -4,6 +4,8 @@ import PageObjects.ContactForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.MarionetteDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -17,42 +19,26 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
  // private static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
         String sURL = ContactForm.sURL;
         WebDriver driver;
-  //  public static void main(String[] args) {
-  @Parameters("browser")
 
-  @BeforeClass
-
-  // Passing Browser parameter from TestNG xml
-
-  public void beforeTest(String browser) {
-
-      // If the browser is Firefox, then do this
-
-      if (browser.equalsIgnoreCase("firefox")) {
-          System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
-          driver =new FirefoxDriver();
+    @Test
+    public void testTwoMillionContactFormRetailSegmentDepartmentStores(){
 
 
+     /*   System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
+      DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        capabilities.setCapability("marionette", true);
+        WebDriver driver = new FirefoxDriver(capabilities);*/
 
-          // If browser is IE, then do this
 
-      } else if (browser.equalsIgnoreCase("chrome")) {
+System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
 
-          // Here I am setting up the path for my IEDriver
 
-          System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
 
-          driver = new ChromeDriver();
 
-      }
       driver.navigate().to(sURL);
       driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-  }
-      @Test
-      public void testTwoMillionContactFormRetailSegmentDepartmentStores(){
-   // System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
-       // WebDriver driver = new ChromeDriver();
 
         driver.navigate().to(sURL);
         driver.manage().window().maximize();
