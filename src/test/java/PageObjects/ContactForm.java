@@ -43,7 +43,8 @@ public class ContactForm {
     public WebElement selectVolumeOfSales;
     @FindBy(xpath="//div[@id='page0']//ul[@class='checkboxes choice']/li")
    List <WebElement> checkBoxTargetMarket;
-
+    @FindBy(name="target_markets_europe")
+    public WebElement selectTargetEuropeanMarket;
     @FindBy(name = "hq")
     public WebElement selectHeadQuarters;
     @FindBy(name = "message")
@@ -144,7 +145,7 @@ public class ContactForm {
         retailSegment.selectByValue(forRetail);
     }
 
-    public void selectSalesVolume(String salesVolumeDropDownIndex) {
+    public void selectSalesVolume(String salesVolumeDropDown) {
          /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -152,7 +153,7 @@ public class ContactForm {
            use of Select is also so that if required we can loop when we update this method*/
         Select salesVolume = new Select(selectVolumeOfSales);
         List<WebElement> salesVolumeSelector = salesVolume.getOptions();
-        salesVolume.selectByValue(salesVolumeDropDownIndex);
+        salesVolume.selectByValue(salesVolumeDropDown);
     }
 
     public void countrySelector(int countryDropDownIndex) {
@@ -174,7 +175,12 @@ public class ContactForm {
                   throw new NoSuchElementException("no such element expression");
               }
     }
+    public void selectEuropeanMarket(String europeanTargetMarket){
+        Select selectEuropeanTargetMarket = new Select(selectTargetEuropeanMarket);
+        List<WebElement> taargetEuropeanMarketSelector = selectEuropeanTargetMarket.getOptions();
+        selectEuropeanTargetMarket.selectByValue(europeanTargetMarket);
 
+    }
 
     public void setMessageInMessageBox(String text) {
         txtBoxMessage.sendKeys(text + " : " + new Timestamp(System.currentTimeMillis()));
