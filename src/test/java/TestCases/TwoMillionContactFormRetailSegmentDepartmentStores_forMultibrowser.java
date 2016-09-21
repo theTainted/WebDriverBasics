@@ -70,7 +70,7 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores_forMultibrowser 
         contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail("Department stores");
         contactform.countrySelector(30);
-        contactform.selectSalesVolume(1);
+        contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
         driver.quit();

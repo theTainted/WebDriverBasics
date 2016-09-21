@@ -34,7 +34,7 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAdde
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Value Added Resellers");
         contactform.countrySelector(19);
-        contactform.selectSalesVolume(2);
+        contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Middle East");
         contactform.setMessageInMessageBox("Test Message");

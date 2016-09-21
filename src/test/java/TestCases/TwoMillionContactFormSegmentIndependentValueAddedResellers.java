@@ -34,7 +34,7 @@ public class TwoMillionContactFormSegmentIndependentValueAddedResellers {
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Value Added Resellers");
         contactform.countrySelector(5);
-        contactform.selectSalesVolume(1);
+        contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
        // driver.quit();

@@ -34,7 +34,7 @@ public class TwoMillionContactFormSegmentIndependentTelcoResellers {
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Telco resellers");
         contactform.countrySelector(4);
-        contactform.selectSalesVolume(1);
+        contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
         driver.quit();

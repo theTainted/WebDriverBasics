@@ -34,7 +34,7 @@ public class TwoToFiveMillionContactFormRetailSegmentB2BCommercialGoods {
         contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail("B2B commercial goods");
         contactform.countrySelector(12);
-        contactform.selectSalesVolume(2);
+        contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Europe");
         contactform.setMessageInMessageBox("Test Message");

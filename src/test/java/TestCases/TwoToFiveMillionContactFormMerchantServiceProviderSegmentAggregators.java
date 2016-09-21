@@ -34,7 +34,7 @@ public class TwoToFiveMillionContactFormMerchantServiceProviderSegmentAggregator
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Aggregators");
         contactform.countrySelector(13);
-        contactform.selectSalesVolume(2);
+        contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Europe");
         contactform.setMessageInMessageBox("Test Message");

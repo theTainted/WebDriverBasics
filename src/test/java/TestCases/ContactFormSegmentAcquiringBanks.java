@@ -34,7 +34,7 @@ public class ContactFormSegmentAcquiringBanks {
         contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry("Acquiring banks");
         contactform.countrySelector(1);
-        contactform.selectSalesVolume(1);
+        contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
        driver.quit();

@@ -144,7 +144,7 @@ public class ContactForm {
         retailSegment.selectByValue(forRetail);
     }
 
-    public void selectSalesVolume(int salesVolumeDropDownIndex) {
+    public void selectSalesVolume(String salesVolumeDropDownIndex) {
          /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -152,7 +152,7 @@ public class ContactForm {
            use of Select is also so that if required we can loop when we update this method*/
         Select salesVolume = new Select(selectVolumeOfSales);
         List<WebElement> salesVolumeSelector = salesVolume.getOptions();
-        salesVolume.selectByIndex(salesVolumeDropDownIndex);
+        salesVolume.selectByValue(salesVolumeDropDownIndex);
     }
 
     public void countrySelector(int countryDropDownIndex) {

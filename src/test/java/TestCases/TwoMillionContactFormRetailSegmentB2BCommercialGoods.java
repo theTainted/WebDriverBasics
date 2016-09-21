@@ -34,7 +34,7 @@ public class TwoMillionContactFormRetailSegmentB2BCommercialGoods {
         contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail("B2B commercial goods");
         contactform.countrySelector(6);
-        contactform.selectSalesVolume(1);
+        contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
         driver.quit();
