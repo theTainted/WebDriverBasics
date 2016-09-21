@@ -55,7 +55,7 @@ public class ContactForm {
 
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    public static String sURL="https://www-ingenico-test-global.lostboys.nl/ca/epayments/contact-us";
+    public static String sURL="https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
     public ContactForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -90,7 +90,9 @@ public class ContactForm {
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
            now this is designed for me and for my ease
-           use of Select is also so that if required we can loop when we update this method*/
+           use of Select is also so that if required we can loop when we update this method
+           to get this working in firefox update the method to handle the value instead of index*/
+        selectIndustry.click();
         Select industry = new Select(selectIndustry);
         List<WebElement> industrySelector = industry.getOptions();
         industry.selectByIndex(industryDropDownIndex);
