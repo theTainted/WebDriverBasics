@@ -85,7 +85,7 @@ public class ContactForm {
         txtBoxPhone.sendKeys(phoneNumber);
     }
 
-    public void selectIndustry(int industryDropDownIndex) {
+    public void selectIndustry(String industryName) {
          /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -95,7 +95,7 @@ public class ContactForm {
         selectIndustry.click();
         Select industry = new Select(selectIndustry);
         List<WebElement> industrySelector = industry.getOptions();
-        industry.selectByIndex(industryDropDownIndex);
+        industry.selectByValue(industryName);
     }
 
     public void selectSegment(int segmentDropDownIndex) {
