@@ -1,16 +1,21 @@
 package TestCases;
 
 import PageObjects.ContactForm;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -25,10 +30,10 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
     public void testTwoMillionContactFormRetailSegmentDepartmentStores() throws InterruptedException {
 
 
-     System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
+  /*   System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
       //DesiredCapabilities capabilities = DesiredCapabilities.firefox();
         //capabilities.setCapability("marionette", true);
-      WebDriver driver = new FirefoxDriver();
+      WebDriver driver = new FirefoxDriver();*/
 
 
 
@@ -44,9 +49,6 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
       driver.manage().window().maximize();
       driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
-        driver.navigate().to(sURL);
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         ContactForm contactform = new ContactForm(driver);
        // driver.navigate().to(sURL);
@@ -57,8 +59,11 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
-        Thread.sleep(5000);
+
+
+
         contactform.selectIndustry(3);
+
         contactform.selectSegmentForRetail(6);
         contactform.countrySelector(30);
         contactform.selectSalesVolume(1);
