@@ -23,6 +23,7 @@
         <class name="TestCases.TwoMillionContactFormRetailSegmentClothingShoeAccessories"/>
         <class name="TestCases.TwoMillionContactFormRetailSegmentConvinienceStores"/>
         <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+        <class name ="TestCases.TwoToFiveMillionContactFormEurpeanMarketFinancialServiceSegmentAcquiringBanks"/>
     </classes>
 </test>
 </suite>
