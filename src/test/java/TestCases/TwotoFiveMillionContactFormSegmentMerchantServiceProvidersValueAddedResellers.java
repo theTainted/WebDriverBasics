@@ -39,6 +39,6 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAdde
         contactform.selectTargetMarket("Middle East");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
-        driver.quit();
+        //driver.quit();
     }
 }
