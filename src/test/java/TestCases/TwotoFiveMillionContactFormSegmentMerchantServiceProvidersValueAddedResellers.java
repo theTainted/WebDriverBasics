@@ -3,6 +3,8 @@ package TestCases;
 import PageObjects.ContactForm;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -14,6 +16,7 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAdde
     String sURL = ContactForm.sURL;
 
   //  public static void main(String[] args) {
+
     @Test
        public void testwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers(){
     System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");

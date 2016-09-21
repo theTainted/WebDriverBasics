@@ -8,7 +8,7 @@
 
     <classes>
 
-        <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers"/>
     </classes>
     </test>
 
@@ -20,7 +20,7 @@
     <classes>
 
 
-        <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers"/>
     </classes>
     </test>
 </suite>
