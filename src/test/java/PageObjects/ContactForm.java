@@ -156,7 +156,7 @@ public class ContactForm {
         salesVolume.selectByValue(salesVolumeDropDown);
     }
 
-    public void countrySelector(int countryDropDownIndex) {
+    public void countrySelector(String countryDropDown) {
          /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -164,7 +164,7 @@ public class ContactForm {
            use of Select is also so that if required we can loop when we update this method*/
         Select countrySelect = new Select(selectHeadQuarters);
         List<WebElement> headQuarterelector = countrySelect.getOptions();
-        countrySelect.selectByIndex(countryDropDownIndex);
+        countrySelect.selectByValue(countryDropDown);
     }
     public void selectTargetMarket(String sTargetMarket){
         //If  Europe alone is selected we will create a new one so that it handles the scenario where it lets you choose <5 or  >5 european countries

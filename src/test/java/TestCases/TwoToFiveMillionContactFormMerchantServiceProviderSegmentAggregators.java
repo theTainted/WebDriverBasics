@@ -33,7 +33,7 @@ public class TwoToFiveMillionContactFormMerchantServiceProviderSegmentAggregator
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Aggregators");
-        contactform.countrySelector(13);
+        contactform.countrySelector("Iceland");
         contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Europe");

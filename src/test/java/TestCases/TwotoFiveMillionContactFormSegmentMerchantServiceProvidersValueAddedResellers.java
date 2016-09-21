@@ -33,7 +33,7 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAdde
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Value Added Resellers");
-        contactform.countrySelector(19);
+        contactform.countrySelector("Panama");
         contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Middle East");

@@ -33,7 +33,7 @@ public class TwoMillionContactFormSegmentIndependentTelcoResellers {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Telco resellers");
-        contactform.countrySelector(4);
+        contactform.countrySelector("Baharin");
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

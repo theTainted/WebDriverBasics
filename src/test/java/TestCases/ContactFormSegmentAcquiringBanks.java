@@ -33,7 +33,7 @@ public class ContactFormSegmentAcquiringBanks {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry("Acquiring banks");
-        contactform.countrySelector(1);
+        contactform.countrySelector("Afghanistan");
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

@@ -33,7 +33,7 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndepende
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Telco resellers");
-        contactform.countrySelector(18);
+        contactform.countrySelector("Peru");
         contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Middle East");

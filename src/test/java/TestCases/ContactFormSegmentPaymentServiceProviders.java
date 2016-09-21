@@ -31,7 +31,7 @@ public class ContactFormSegmentPaymentServiceProviders {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry("Payment Service Providers");
-        contactform.countrySelector(2);
+        contactform.countrySelector("AX");
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

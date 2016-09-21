@@ -35,7 +35,7 @@ public class TwoMillionContactFormRetailSegmentConvinienceStores {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail("Convenience stores");
-        contactform.countrySelector(30);
+        contactform.countrySelector("Austria");
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

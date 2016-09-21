@@ -33,7 +33,7 @@ public class TwoToFiveMillionContactFormRetailSegmentB2BCommercialGoods {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail("B2B commercial goods");
-        contactform.countrySelector(12);
+        contactform.countrySelector("Oman");
         contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Europe");

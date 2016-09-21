@@ -33,7 +33,7 @@ public class TwoMillionContactFormSegmentIndependentValueAddedResellers {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders("Value Added Resellers");
-        contactform.countrySelector(5);
+        contactform.countrySelector("Belgium");
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

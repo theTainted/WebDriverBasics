@@ -34,7 +34,7 @@ public class TwoToFiveMillionContactFormFinancialServiceSegmentPaymentServicePro
 
         contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry("Acquiring banks");
-        contactform.countrySelector(22);
+        contactform.countrySelector("Cyprus");
         contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Latin America");
         contactform.selectTargetMarket("Europe");

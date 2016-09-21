@@ -35,7 +35,7 @@ public class TwoMillionContactFormRetailSegmentClothingShoeAccessories {
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail("Clothing / shoes / accessories");
-        contactform.countrySelector(30);
+        contactform.countrySelector("Canada");
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();

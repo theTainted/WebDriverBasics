@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by syam.suryanarayanan on 9/16/2016.
  */
-public class TwoToFiveMillionContactFormEurpeanMarketFinancialServiceSegmentAcquiringBanks {
+public class TwoToFiveMillionContactFormEuropeanMarketFinancialServiceSegmentAcquiringBanks {
     String sURL = ContactForm.sURL;
 
     //  public static void main(String[] args) {
     @Test
-    public void testTwoToFiveMillionContactFormEurpeanMarketFinancialServiceSegmentAcquiringBanks()  {
+    public void testTwoToFiveMillionContactFormEuropeanMarketFinancialServiceSegmentAcquiringBanks()  {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String sValue = "Europe";
@@ -34,7 +34,7 @@ public class TwoToFiveMillionContactFormEurpeanMarketFinancialServiceSegmentAcqu
 
         contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry("Acquiring banks");
-        contactform.countrySelector(1);
+        contactform.countrySelector("Netherlands");
         contactform.selectSalesVolume("2 - 5 million");
         contactform.selectTargetMarket("Europe");
         contactform.selectEuropeanMarket("Less than 5 European countries");
