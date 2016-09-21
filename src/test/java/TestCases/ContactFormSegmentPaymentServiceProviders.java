@@ -29,7 +29,7 @@ public class ContactFormSegmentPaymentServiceProviders {
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
-        contactform.selectIndustry(1);
+        contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry(2);
         contactform.countrySelector(2);
         contactform.selectSalesVolume(1);

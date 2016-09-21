@@ -38,7 +38,7 @@ public class TwoToFiveMillionContactFormFinancialServiceSegmentAcquiringBanks {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
 
-        contactform.selectIndustry(1);
+        contactform.selectIndustry("Merchants Financial Services Providers");
         contactform.selectSegementForFinancialIndustry(1);
         contactform.countrySelector(1);
         contactform.selectSalesVolume(2);

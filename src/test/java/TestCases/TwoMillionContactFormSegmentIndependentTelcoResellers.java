@@ -31,7 +31,7 @@ public class TwoMillionContactFormSegmentIndependentTelcoResellers {
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
-        contactform.selectIndustry(2);
+        contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders(3);
         contactform.countrySelector(4);
         contactform.selectSalesVolume(1);

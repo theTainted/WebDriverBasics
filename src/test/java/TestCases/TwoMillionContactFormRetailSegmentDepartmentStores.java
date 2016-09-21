@@ -62,7 +62,7 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
 
 
 
-        contactform.selectIndustry(3);
+        contactform.selectIndustry("Retail");
 
         contactform.selectSegmentForRetail(6);
         contactform.countrySelector(30);

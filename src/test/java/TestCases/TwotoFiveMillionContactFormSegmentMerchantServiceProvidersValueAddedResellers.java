@@ -31,7 +31,7 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAdde
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
-        contactform.selectIndustry(2);
+        contactform.selectIndustry("Merchants Services Providers");
         contactform.selectSegmentForMerchantsServicesProviders(4);
          contactform.countrySelector(19);
         contactform.selectSalesVolume(2);

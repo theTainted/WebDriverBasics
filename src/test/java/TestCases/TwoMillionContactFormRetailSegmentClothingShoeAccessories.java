@@ -33,7 +33,7 @@ public class TwoMillionContactFormRetailSegmentClothingShoeAccessories {
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
-        contactform.selectIndustry(3);
+        contactform.selectIndustry("Retail");
         contactform.selectSegmentForRetail(4);
         contactform.countrySelector(30);
         contactform.selectSalesVolume(1);
