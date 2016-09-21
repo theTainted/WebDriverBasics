@@ -32,7 +32,7 @@ public class TwoToFiveMillionContactFormRetailSegmentB2BCommercialGoods {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
-        contactform.selectSegmentForRetail(1);
+        contactform.selectSegmentForRetail("B2B commercial goods");
         contactform.countrySelector(12);
         contactform.selectSalesVolume(2);
         contactform.selectTargetMarket("Asia/Pacific");

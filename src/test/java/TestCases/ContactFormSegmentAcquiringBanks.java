@@ -32,7 +32,7 @@ public class ContactFormSegmentAcquiringBanks {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Financial Services Providers");
-        contactform.selectSegementForFinancialIndustry(1);
+        contactform.selectSegementForFinancialIndustry("Acquiring banks");
         contactform.countrySelector(1);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

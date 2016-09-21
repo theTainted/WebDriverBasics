@@ -32,7 +32,7 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndepende
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
-        contactform.selectSegmentForMerchantsServicesProviders(3);
+        contactform.selectSegmentForMerchantsServicesProviders("Telco resellers");
         contactform.countrySelector(18);
         contactform.selectSalesVolume(2);
         contactform.selectTargetMarket("Asia/Pacific");

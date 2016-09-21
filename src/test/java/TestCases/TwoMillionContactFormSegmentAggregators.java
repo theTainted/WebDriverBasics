@@ -32,7 +32,7 @@ public class TwoMillionContactFormSegmentAggregators {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
-        contactform.selectSegmentForMerchantsServicesProviders(1);
+        contactform.selectSegmentForMerchantsServicesProviders("Aggregators");
         contactform.countrySelector(3);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

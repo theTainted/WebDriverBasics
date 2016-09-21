@@ -32,7 +32,7 @@ public class TwoToFiveMillionContactFormMerchantServiceProviderSegmentAggregator
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
-        contactform.selectSegmentForMerchantsServicesProviders(1);
+        contactform.selectSegmentForMerchantsServicesProviders("Aggregators");
         contactform.countrySelector(13);
         contactform.selectSalesVolume(2);
         contactform.selectTargetMarket("Asia/Pacific");

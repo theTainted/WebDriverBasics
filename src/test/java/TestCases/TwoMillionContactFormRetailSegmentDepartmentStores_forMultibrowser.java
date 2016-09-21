@@ -68,7 +68,7 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores_forMultibrowser 
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
-        contactform.selectSegmentForRetail(6);
+        contactform.selectSegmentForRetail("Department stores");
         contactform.countrySelector(30);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

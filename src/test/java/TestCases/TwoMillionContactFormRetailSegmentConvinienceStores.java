@@ -34,7 +34,7 @@ public class TwoMillionContactFormRetailSegmentConvinienceStores {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
-        contactform.selectSegmentForRetail(5);
+        contactform.selectSegmentForRetail("Convenience stores");
         contactform.countrySelector(30);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

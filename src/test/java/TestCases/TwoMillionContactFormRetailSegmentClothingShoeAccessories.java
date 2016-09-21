@@ -34,7 +34,7 @@ public class TwoMillionContactFormRetailSegmentClothingShoeAccessories {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
-        contactform.selectSegmentForRetail(4);
+        contactform.selectSegmentForRetail("Clothing / shoes / accessories");
         contactform.countrySelector(30);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

@@ -32,13 +32,13 @@ public class TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAdde
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
-        contactform.selectSegmentForMerchantsServicesProviders(4);
-         contactform.countrySelector(19);
+        contactform.selectSegmentForMerchantsServicesProviders("Value Added Resellers");
+        contactform.countrySelector(19);
         contactform.selectSalesVolume(2);
         contactform.selectTargetMarket("Asia/Pacific");
         contactform.selectTargetMarket("Middle East");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
-        //driver.quit();
+        driver.quit();
     }
 }

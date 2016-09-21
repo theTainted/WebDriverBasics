@@ -34,7 +34,7 @@ public class TwoMillionContactFormRetailSegmentCarDealersServices {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Retail");
-        contactform.selectSegmentForRetail(3);
+        contactform.selectSegmentForRetail("Car dealers / services");
         contactform.countrySelector(29);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

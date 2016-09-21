@@ -32,7 +32,7 @@ public class TwoMillionContactFormSegmentIndependentValueAddedResellers {
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
         contactform.selectIndustry("Merchants Services Providers");
-        contactform.selectSegmentForMerchantsServicesProviders(4);
+        contactform.selectSegmentForMerchantsServicesProviders("Value Added Resellers");
         contactform.countrySelector(5);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

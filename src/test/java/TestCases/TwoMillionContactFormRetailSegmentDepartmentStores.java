@@ -64,7 +64,7 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
 
         contactform.selectIndustry("Retail");
 
-        contactform.selectSegmentForRetail(6);
+        contactform.selectSegmentForRetail("Department stores");
         contactform.countrySelector(30);
         contactform.selectSalesVolume(1);
         contactform.setMessageInMessageBox("Test Message");

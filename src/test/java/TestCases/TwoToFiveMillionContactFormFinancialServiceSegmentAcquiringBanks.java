@@ -39,7 +39,7 @@ public class TwoToFiveMillionContactFormFinancialServiceSegmentAcquiringBanks {
         contactform.setPhone("1234567");
 
         contactform.selectIndustry("Merchants Financial Services Providers");
-        contactform.selectSegementForFinancialIndustry(1);
+        contactform.selectSegementForFinancialIndustry("Acquiring banks");
         contactform.countrySelector(1);
         contactform.selectSalesVolume(2);
         contactform.selectTargetMarket("Latin America");

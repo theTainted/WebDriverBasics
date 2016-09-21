@@ -58,7 +58,7 @@ public class ContactForm {
 
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    public static String sURL="https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+    public static String sURL="https://www-ingenico-test-global.lostboys.nl/ca/epayments/contact-us";
 
     public ContactForm(WebDriver driver) {
         this.driver = driver;
@@ -113,7 +113,7 @@ public class ContactForm {
         segment.selectByIndex(segmentDropDownIndex);
     }
 
-    public void selectSegementForFinancialIndustry(int financialndstryDropDownIndex) {
+    public void selectSegementForFinancialIndustry(String financialndstryDropDownIndex) {
           /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -121,9 +121,9 @@ public class ContactForm {
            use of Select is also so that if required we can loop when we update this method*/
         Select financialSegment = new Select(selectSegmentForFinancialServiceProviders);
         List<WebElement> financialSegmentSelector = financialSegment.getOptions();
-        financialSegment.selectByIndex(financialndstryDropDownIndex);
+        financialSegment.selectByValue(financialndstryDropDownIndex);
     }
-    public void selectSegmentForMerchantsServicesProviders(int forMerchantsServiceProviders){
+    public void selectSegmentForMerchantsServicesProviders(String forMerchantsServiceProviders){
         /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -131,9 +131,9 @@ public class ContactForm {
            use of Select is also so that if required we can loop when we update this method*/
         Select merchantServiceProviderSegment = new Select(selectMerchantServiceProviderSegement);
         List <WebElement> merchantServiceProviderSegementSelector = merchantServiceProviderSegment.getOptions();
-        merchantServiceProviderSegment.selectByIndex(forMerchantsServiceProviders);
+        merchantServiceProviderSegment.selectByValue(forMerchantsServiceProviders);
     }
-    public void selectSegmentForRetail(int forRetail){
+    public void selectSegmentForRetail(String forRetail){
         /*The index will start from one,
           may be later we can try making the function more intelligent ,
          include looping and avoid passing the index
@@ -141,7 +141,7 @@ public class ContactForm {
            use of Select is also so that if required we can loop when we update this method*/
         Select retailSegment = new Select(selectSegmentForRetail);
         List <WebElement> retailSegmentSelector = retailSegment.getOptions();
-        retailSegment.selectByIndex(forRetail);
+        retailSegment.selectByValue(forRetail);
     }
 
     public void selectSalesVolume(int salesVolumeDropDownIndex) {
@@ -192,8 +192,7 @@ public class ContactForm {
                 driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
                 softAssert.assertNotNull(thankyouPage.getText(), "i dont think you are in the thank you page");
                 softAssert.assertEquals(thankyouPage.getText(), SuccessMessage(), "they dont match");
-                System.out.println(thankyouPage.getText());
-                softAssert.assertAll();
+                                softAssert.assertAll();
 
             }
     }
