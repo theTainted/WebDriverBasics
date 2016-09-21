@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -21,18 +22,21 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
         WebDriver driver;
 
     @Test
-    public void testTwoMillionContactFormRetailSegmentDepartmentStores(){
+    public void testTwoMillionContactFormRetailSegmentDepartmentStores() throws InterruptedException {
 
 
-     /*   System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
-      DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-        capabilities.setCapability("marionette", true);
-        WebDriver driver = new FirefoxDriver(capabilities);*/
+     System.setProperty("webdriver.gecko.driver", "C:/geckodriver.exe");
+      //DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+        //capabilities.setCapability("marionette", true);
+      WebDriver driver = new FirefoxDriver();
 
 
-System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+
+
+
+/*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-
+*/
 
 
 
@@ -53,6 +57,7 @@ System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         contactform.setCompany("LBi");
         contactform.setEmail("syam@LBi.com");
         contactform.setPhone("1234567");
+        Thread.sleep(5000);
         contactform.selectIndustry(3);
         contactform.selectSegmentForRetail(6);
         contactform.countrySelector(30);
