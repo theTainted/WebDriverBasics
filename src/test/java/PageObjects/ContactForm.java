@@ -53,9 +53,13 @@ public class ContactForm {
     @FindBy(xpath="//div[@id='mainContainer']//h1")
     public WebElement thankyouPage;
 
+    @FindBy(id="feedbackPanel")
+    public WebElement errorPanel;
+
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
     public static String sURL="https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+
     public ContactForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -176,24 +180,23 @@ public class ContactForm {
         txtBoxMessage.sendKeys(text + " : " + new Timestamp(System.currentTimeMillis()));
     }
 
-    public Boolean clickSubmit() {
+    public void clickSubmit() {
         //The assert equal text should be made customisable, right now its hardcoded to english.
         Boolean elementPresent;
         btnSubmit.click();
-        try {
-            driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
-            softAssert.assertNotNull(thankyouPage.getText(),"i dont think you are in the thank you page");
-            softAssert.assertEquals(thankyouPage.getText(),"Thanks / Success!","they dont match");
-            System.out.println(thankyouPage.getText());
-            softAssert.assertAll();
+        if (errorPanel.isDisplayed()) {
+            Assert.fail();
+        } else {
 
-            return elementPresent = true;
-        } catch (NoSuchElementException e) {
-            return elementPresent = false;
-        }
+                driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
+                softAssert.assertNotNull(thankyouPage.getText(), "i dont think you are in the thank you page");
+                softAssert.assertEquals(thankyouPage.getText(), SuccessMessage(), "they dont match");
+                System.out.println(thankyouPage.getText());
+                softAssert.assertAll();
 
-
+            }
     }
+
 
     public void acceptCookies() {
         Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
@@ -204,7 +207,19 @@ public class ContactForm {
         }
     }
 
+    public String SuccessMessage() {
 
+        switch (sURL) {
+            case  "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato":
+                return "Obrigado / Sucesso!";
+
+            case "https://www-ingenico-test-global.lostboys.nl/ca/epayments/contact-us":
+                return "Thanks / Success!";
+
+            default:
+                return "default message";
+        }
+    }
     public void switchToFrame(int frameNumber) {
         driver.switchTo().frame(frameNumber);
     }
