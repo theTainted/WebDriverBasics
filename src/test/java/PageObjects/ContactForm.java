@@ -185,6 +185,7 @@ public class ContactForm {
         Boolean elementPresent;
         btnSubmit.click();
         if (errorPanel.isDisplayed()) {
+            System.out.println("error");
             Assert.fail();
         } else {
 
