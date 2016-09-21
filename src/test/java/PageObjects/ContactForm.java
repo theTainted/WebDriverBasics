@@ -152,7 +152,7 @@ public class ContactForm {
          include looping and avoid passing the index
           now this is designed for me and for my ease
            use of Select is also so that if required we can loop when we update this method*/
-        Select vendingSegment = new Select(selectSegmentForRetail);
+        Select vendingSegment = new Select(selectSegmentForVending);
         List <WebElement> vendingSegmentSelector = vendingSegment.getOptions();
         vendingSegment.selectByValue(forVending);
     }
