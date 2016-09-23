@@ -37,6 +37,6 @@ public class TwoMillionContactFormSegmentIndependentValueAddedResellers {
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
-       // driver.quit();
+      driver.quit();
     }
 }
