@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run" parallel="methods" thread-count="3">
+<test name="Simple Test">
+    <classes>
+
+        <class name="TestCases.duplicateCountries"/>
+        <class name="TestCases.ContactFormSegmentAcquiringBanks"/>
+        <class name="TestCases.ContactFormSegmentPaymentServiceProviders"/>
+        <class name="TestCases.TwoMillionContactFormSegmentAggregators" />
+        <class name="TestCases.TwoMillionContactFormSegmentIndependentSalesOrganizations"/>
+        <class name="TestCases.TwoMillionContactFormSegmentIndependentTelcoResellers"/>
+        <class name="TestCases.TwoMillionContactFormSegmentIndependentValueAddedResellers"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentB2BCommercialGoods"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentBookStoresOfficeSupplyGifts"/>
+        <class name="TestCases.TwoToFiveMillionContactFormFinancialServiceSegmentAcquiringBanks"/>
+        <class name="TestCases.TwoToFiveMillionContactFormFinancialServiceSegmentPaymentServiceProviders"/>
+        <class name="TestCases.TwoToFiveMillionContactFormRetailSegmentB2BCommercialGoods"/>
+        <class name="TestCases.TwoToFiveMillionContactFormMerchantServiceProviderSegmentAggregators"/>
+        <class name="TestCases.TwoToFiveMillionContactFormSegmentMerchantServiceProvidersIndependentSalesOrganizations"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersIndependentTelcoResellers"/>
+        <class name="TestCases.TwotoFiveMillionContactFormSegmentMerchantServiceProvidersValueAddedResellers"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentCarDealersServices"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentClothingShoeAccessories"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentConvinienceStores"/>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+        <class name ="TestCases.TwoToFiveMillionContactFormEuropeanMarketFinancialServiceSegmentAcquiringBanks"/>
+        <class name="TestCases.FiftyMillionVendingPrivateSectorEuropeanContactFormMoreThanFiveEuropeanCountries"/>
+        <class name ="TestCases.TwoToFiveMillionContactFormRetailDirectMarketingFieldSales"/>
+    </classes>
+</test>
+</suite>
