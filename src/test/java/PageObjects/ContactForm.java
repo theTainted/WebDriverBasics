@@ -209,6 +209,7 @@ public class ContactForm {
                 driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
                 softAssert.assertNotNull(thankyouPage.getText(), "i dont think you are in the thank you page");
                 softAssert.assertEquals(thankyouPage.getText(), SuccessMessage(), "they dont match");
+                System.out.println(thankyouPage.getText());
                                 softAssert.assertAll();
 
             }
@@ -225,6 +226,7 @@ public class ContactForm {
     }
 
     public String SuccessMessage() {
+        /*for DE, think a possible solution as the heading is being displayed as kontakt*/
 
         switch (sURL) {
             case  "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato":
@@ -232,7 +234,8 @@ public class ContactForm {
 
             case "https://www-ingenico-test-global.lostboys.nl/ca/epayments/contact-us":
                 return "Thanks / Success!";
-
+            case "ttps://www-ingenico-test-global.lostboys.nl/de/epayments/kontaktiere-uns":
+                return "Kontakt";
             default:
                 return "default message";
         }
