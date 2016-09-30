@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ContactFormAllErrorMessages {
     static Properties property = new Properties();
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/apac/epayments/contact-us";
+    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
 
     public static void main(String[] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
@@ -44,6 +44,7 @@ public class ContactFormAllErrorMessages {
                     Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "the expected and actual dont match");
                     Assert.assertEquals(property.getProperty("Empty_JobTitle"), listOfErrorMessage.get(2).getText(), "the expected and actual dont match");
                     Assert.assertEquals(property.getProperty("Empty_Email"), listOfErrorMessage.get(3).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_Empty_Telephone"),listOfErrorMessage.get(4).getText(),"the expected and actual dont match");
 
                 default:
                     System.out.println("nothing to match");
