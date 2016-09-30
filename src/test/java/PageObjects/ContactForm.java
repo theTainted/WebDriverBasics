@@ -243,6 +243,8 @@ public class ContactForm {
                 return "Gracias / ¡Éxito";
             case "https://www-ingenico-test-global.lostboys.nl/fr/contact-us/epayments":
                 return "Contactez-nous";
+            case "https://www-ingenico-test-global.lostboys.nl/contact-us/epayments":
+                return "Success!";
             default:
                 return "default message";
         }
