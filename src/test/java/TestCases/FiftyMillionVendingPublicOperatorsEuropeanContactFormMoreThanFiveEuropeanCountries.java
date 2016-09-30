@@ -38,7 +38,6 @@ public class FiftyMillionVendingPublicOperatorsEuropeanContactFormMoreThanFiveEu
         contactform.selectSalesVolume("> 50 million");
         contactform.selectTargetMarket("Europe");
         contactform.selectTargetMarket("North America");
-        contactform.selectEuropeanMarket("More than 5 European countries");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
         driver.quit();

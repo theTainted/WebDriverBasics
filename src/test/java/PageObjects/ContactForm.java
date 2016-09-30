@@ -196,7 +196,7 @@ public class ContactForm {
             selectEuropeanTargetMarket.selectByValue(europeanTargetMarket);
         }
         else{
-            softAssert.fail(bDisplayed.toString());
+            softAssert.fail("the checkboxes are not available, confirm if the flow is correct");
             softAssert.assertAll();
             }
         }
