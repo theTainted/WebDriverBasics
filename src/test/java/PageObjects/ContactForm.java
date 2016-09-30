@@ -189,11 +189,19 @@ public class ContactForm {
               }
     }
     public void selectEuropeanMarket(String europeanTargetMarket){
-        Select selectEuropeanTargetMarket = new Select(selectTargetEuropeanMarket);
-        List<WebElement> taargetEuropeanMarketSelector = selectEuropeanTargetMarket.getOptions();
-        selectEuropeanTargetMarket.selectByValue(europeanTargetMarket);
+        Boolean bDisplayed = selectTargetEuropeanMarket.isDisplayed();
+        if(bDisplayed) {
+            Select selectEuropeanTargetMarket = new Select(selectTargetEuropeanMarket);
+            List<WebElement> taargetEuropeanMarketSelector = selectEuropeanTargetMarket.getOptions();
+            selectEuropeanTargetMarket.selectByValue(europeanTargetMarket);
+        }
+        else{
+            softAssert.fail(bDisplayed.toString());
+            softAssert.assertAll();
+            }
+        }
 
-    }
+
 
     public void setMessageInMessageBox(String text) {
         txtBoxMessage.sendKeys(text + " : " + new Timestamp(System.currentTimeMillis()));
