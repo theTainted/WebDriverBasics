@@ -228,7 +228,8 @@ public class ContactForm {
     }
 
     public String SuccessMessage() {
-        /*for DE, think a possible solution as the heading is being displayed as kontakt*/
+        /*for DE, think a possible solution as the heading is being displayed as kontakt
+        * for Fr, also change may be we should check the text in p tag */
 
         switch (sURL) {
             case  "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato":
@@ -241,7 +242,7 @@ public class ContactForm {
             case "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto":
                 return "Gracias / ¡Éxito";
             case "https://www-ingenico-test-global.lostboys.nl/fr/contact-us/epayments":
-                return "Demande de contact réussie !";
+                return "Contactez-nous";
             default:
                 return "default message";
         }
