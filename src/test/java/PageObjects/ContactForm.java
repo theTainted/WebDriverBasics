@@ -63,7 +63,7 @@ public class ContactForm {
 
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    public static String sURL="https://www-ingenico-test-global.lostboys.nl/de/epayments/kontaktiere-uns";
+    public static String sURL="https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto";
 
     public ContactForm(WebDriver driver) {
         this.driver = driver;
@@ -246,8 +246,11 @@ public class ContactForm {
         Boolean bAvailable = selectCurrencyDropDown.isDisplayed();
         {
             if (bAvailable){
-                softAssert.fail();
+                softAssert.fail(bAvailable.toString());
                 softAssert.assertAll();
+            }
+            else {
+               Assert.assertTrue(true);
             }
         }
     }
