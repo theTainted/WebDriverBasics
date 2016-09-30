@@ -56,6 +56,8 @@ public class ContactForm {
     @FindBy(xpath="//div[@id='mainContainer']//h1")
     public WebElement thankyouPage;
 
+    @FindBy(name="currency")
+    public WebElement selectCurrencyDropDown;
     @FindBy(id="feedbackPanel")
     public WebElement errorPanel;
 
@@ -240,6 +242,16 @@ public class ContactForm {
                 return "default message";
         }
     }
+    public void isCurrencyDropDownAvailable(){
+        Boolean bAvailable = selectCurrencyDropDown.isDisplayed();
+        {
+            if (bAvailable){
+                softAssert.fail();
+                softAssert.assertAll();
+            }
+        }
+    }
+
     public void switchToFrame(int frameNumber) {
         driver.switchTo().frame(frameNumber);
     }
