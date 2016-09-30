@@ -15,7 +15,7 @@ import static PageObjects.ContactForm.sURL;
 public class AvailabilityOfCurrencyDropDown {
     @Test
     public void testAvailabilityOfCurrencyDropDown(){
-
+    //sURL="https://www-ingenico-test-global.lostboys.nl/de/epayments/kontaktiere-uns";
 
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
@@ -28,7 +28,7 @@ public class AvailabilityOfCurrencyDropDown {
         contactform.switchToFrame(0);
         contactform.isCurrencyDropDownAvailable();
 
-          driver.quit();
+          //driver.quit();
 
     }
 }
