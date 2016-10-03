@@ -33,8 +33,10 @@ public class ContactFormAllErrorMessages {
         ContactForm contactform = new ContactForm(driver);
         contactform.switchToFrame(0);
         contactform.clickSubmit();
+        contactform.switchToDefaultFrame();
         List<WebElement> listOfErrorMessage= driver.findElements(By.xpath("//div[@id='feedbackPanel']//li"));
-        System.out.println(listOfErrorMessage.size());
+
+      //  System.out.println(listOfErrorMessage.size());
      //   for(WebElement errorMessage:listOfErrorMessage){
 
             switch (sURL) {
@@ -58,4 +60,3 @@ public class ContactFormAllErrorMessages {
         }
  //   }
 
-//we need to work out a simple way, like adding arrays and comparing from it,
