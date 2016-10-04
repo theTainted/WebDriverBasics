@@ -24,6 +24,7 @@ public class ContactFormSegmentAcquiringBanks {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         ContactForm contactform = new ContactForm(driver);
+        contactform.acceptCookies();
         contactform.switchToFrame(0);
         contactform.setFirstName("Syam");
         contactform.setLastName("s");
@@ -37,6 +38,6 @@ public class ContactFormSegmentAcquiringBanks {
         contactform.selectSalesVolume("New business - 2 million");
         contactform.setMessageInMessageBox("Test Message");
         contactform.clickSubmit();
-       driver.quit();
+       //driver.quit();
     }
 }
