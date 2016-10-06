@@ -73,7 +73,7 @@ public class duplicateCountries {
 
         }
         bw.close();
-        driver.quit();
+       // driver.quit();
     }
 
 
