@@ -47,7 +47,13 @@ public class ContactFormAllErrorMessages {
                     Assert.assertEquals(property.getProperty("Empty_JobTitle"), listOfErrorMessage.get(2).getText(), "the expected and actual dont match");
                     Assert.assertEquals(property.getProperty("Empty_Email"), listOfErrorMessage.get(3).getText(), "the expected and actual dont match");
                     Assert.assertEquals(property.getProperty("Empty_Empty_Telephone"),listOfErrorMessage.get(4).getText(),"the expected and actual dont match");
-
+                case  "https://nl-ingenico-test-global.lostboys.nl/epayments/contact":
+                    property.load(new FileInputStream("..\\WebDriverBasics\\NL.txt"));
+                    Assert.assertEquals(property.getProperty("Empty_First_Name"), listOfErrorMessage.get(0).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_Last_Name"), listOfErrorMessage.get(1).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_JobTitle"), listOfErrorMessage.get(2).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_Email"), listOfErrorMessage.get(3).getText(), "the expected and actual dont match");
+                    Assert.assertEquals(property.getProperty("Empty_Empty_Telephone"),listOfErrorMessage.get(4).getText(),"the expected and actual dont match");
                 default:
                     System.out.println("nothing to match");
             }
