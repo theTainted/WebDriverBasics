@@ -257,7 +257,7 @@ public class ContactForm {
             case "https://nl-ingenico-test-global.lostboys.nl/epayments/contact":
                 return "Thanks NL / Success!";
             case "https://nl-ingenico-test-global.lostboys.nl/en/epayments/contact-us":
-                return "Thanks";
+                return "Thanks / Success!";
             default:
                 return "default message";
         }
