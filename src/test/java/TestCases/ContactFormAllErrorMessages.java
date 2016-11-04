@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ContactFormAllErrorMessages {
     static Properties property = new Properties();
-    static String sURL = "https://www-ingenico-test-global.lostboys.nl/br/epayments/contato";
+    static String sURL = "https://nl-ingenico-test-global.lostboys.nl/epayments/contact";
 
     public static void main(String[] args) throws IOException {
         System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
