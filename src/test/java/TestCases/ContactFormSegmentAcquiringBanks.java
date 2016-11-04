@@ -24,7 +24,7 @@ public class ContactFormSegmentAcquiringBanks {
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
         ContactForm contactform = new ContactForm(driver);
-        contactform.acceptCookies();
+      //  contactform.acceptCookies();
         contactform.switchToFrame(0);
         contactform.setFirstName("Syam");
         contactform.setLastName("s");

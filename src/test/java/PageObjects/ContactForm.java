@@ -225,7 +225,7 @@ public class ContactForm {
     }
 
 
-    public void acceptCookies() {
+ /*   public void acceptCookies() {
         Boolean bValue = driver.findElement(By.xpath("//div[@class='row']//a[@class='button accept']")).isDisplayed();
         System.out.println(bValue);
         if (bValue) {
@@ -233,7 +233,7 @@ public class ContactForm {
 
         }
     }
-
+*/
     public String SuccessMessage() {
         /*for DE, think a possible solution as the heading is being displayed as kontakt
         * for Fr, also change may be we should check the text in p tag */
