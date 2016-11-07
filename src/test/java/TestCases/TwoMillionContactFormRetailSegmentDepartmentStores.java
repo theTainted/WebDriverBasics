@@ -39,9 +39,9 @@ public class TwoMillionContactFormRetailSegmentDepartmentStores {
 
 
 
-/*System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "C:/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
-*/
+
 
 
 
