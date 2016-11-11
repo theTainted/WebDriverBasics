@@ -211,11 +211,13 @@ public class ContactForm {
         Boolean elementPresent;
         btnSubmit.click();
         if (errorPanel.isDisplayed()) {
-            System.out.println("error");
+           // System.out.println("error");
             Assert.fail();
         } else {
 
                 driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
+            System.out.println(thankyouPage.getText());
+            System.out.println("Success : "+SuccessMessage());
                 softAssert.assertNotNull(thankyouPage.getText(), "i dont think you are in the thank you page");
                 softAssert.assertEquals(thankyouPage.getText(), SuccessMessage(), "they dont match");
                 System.out.println(thankyouPage.getText());
