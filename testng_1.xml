@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Example test run">
+<test name="Simple Test">
+    <classes>
+        <class name="TestCases.TwoMillionContactFormRetailSegmentDepartmentStores"/>
+        <class name="TestCases.TwoToFiveMillionContactFormSegmentMerchantServiceProvidersIndependentSalesOrganizations"/>
+            </classes>
+</test>
+</suite>
+
+
+
+
+
+
+
+

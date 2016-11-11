@@ -63,7 +63,7 @@ public class ContactForm {
 
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    public static String sURL="https://www-ingenico-staging-global.lostboys.nl/br/epayments/contato";
+    public static String sURL="https://https://nl-ingenico-test-global.lostboys.nl/en/epayments/contact-us";
     public ContactForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
