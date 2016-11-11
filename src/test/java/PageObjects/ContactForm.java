@@ -249,7 +249,7 @@ public class ContactForm {
             case "https://www-ingenico-staging-global.lostboys.nl/de/epayments/kontaktiere-uns":
                 return "Kontakt";
             case "https://www-ingenico-test-global.lostboys.nl/lar-es/epayments/contacto":
-                return "Gracias / ¡Éxito";
+                return "Gracias / ¡Éxito!";
             case "https://www-ingenico-test-global.lostboys.nl/fr/contact-us/epayments":
                 return "Contactez-nous";
             case "https://www-ingenico-test-global.lostboys.nl/contact-us/epayments":
