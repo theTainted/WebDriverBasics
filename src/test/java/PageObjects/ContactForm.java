@@ -216,9 +216,9 @@ public class ContactForm {
         } else {
 
                 driver.findElement(By.xpath("//div[@id='mainContainer']//h1"));
-            System.out.println(thankyouPage.getText());
-            System.out.println("Success : "+SuccessMessage());
-                softAssert.assertNotNull(thankyouPage.getText(), "i dont think you are in the thank you page");
+          //  System.out.println(thankyouPage.getText());
+          //  System.out.println("Success : "+SuccessMessage());
+               softAssert.assertNotNull(thankyouPage.getText(), "i dont think you are in the thank you page");
                 softAssert.assertEquals(thankyouPage.getText(), SuccessMessage(), "they dont match");
                 System.out.println(thankyouPage.getText());
                                 softAssert.assertAll();
@@ -260,6 +260,8 @@ public class ContactForm {
                 return "Thanks NL / Success!";
             case "https://nl-ingenico-test-global.lostboys.nl/en/epayments/contact-us":
                 return "Thanks / Success!";
+            case "https://www-ingenico-staging-global.lostboys.nl/lar-es/epayments/contacto":
+                return "Gracias / ¡Éxito!";
             default:
                 return "default message";
         }
