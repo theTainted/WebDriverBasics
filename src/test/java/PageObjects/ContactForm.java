@@ -63,7 +63,7 @@ public class ContactForm {
 
     WebDriver driver;
     SoftAssert softAssert = new SoftAssert();
-    public static String sURL="https://nl-ingenico-test-global.lostboys.nl/epayments/contact";
+    public static String sURL="https://www-ingenico-staging-global.lostboys.nl/nl/en/epayments/contact-us";
     public ContactForm(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(this.driver, this);
@@ -259,6 +259,8 @@ public class ContactForm {
             case "https://nl-ingenico-test-global.lostboys.nl/epayments/contact":
                 return "Thanks NL / Success!";
             case "https://nl-ingenico-test-global.lostboys.nl/en/epayments/contact-us":
+                return "Thanks / Success!";
+            case "https://www-ingenico-staging-global.lostboys.nl/nl/en/epayments/contact-us":
                 return "Thanks / Success!";
             case "https://www-ingenico-staging-global.lostboys.nl/lar-es/epayments/contacto":
                 return "Gracias / ¡Éxito!";
